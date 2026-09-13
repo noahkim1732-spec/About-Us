@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about Focusing on the Future, a student-built resource hub helping students navigate college and career planning.">
+  <title>About Us | Focusing on the Future</title>
+  <style>
+    :root {
+      --navy: #102a43;
+      --blue: #2563eb;
+      --blue-dark: #1d4ed8;
+      --sky: #eaf2ff;
+      --ink: #172033;
+      --muted: #5e6b7f;
+      --line: #dbe4f0;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #f7f9fc;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    a { color: inherit; }
+    .hero {
+      position: relative;
+      overflow: hidden;
+      color: var(--white);
+      background: linear-gradient(125deg, #0f2740 0%, #173f67 58%, #2563a5 100%);
+      padding: 84px 24px 90px;
+      text-align: center;
+    }
+    .hero::before, .hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255,255,255,.06);
+    }
+    .hero::before { width: 320px; height: 320px; top: -190px; right: 5%; }
+    .hero::after { width: 220px; height: 220px; bottom: -150px; left: 8%; }
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      color: #bcd8ff;
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2.5rem, 7vw, 4.8rem);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .hero p {
+      max-width: 690px;
+      margin: 20px auto 0;
+      color: #e7f0fb;
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
+    }
+    main { width: min(1100px, calc(100% - 36px)); margin: -34px auto 72px; position: relative; }
+    .mission {
+      padding: 40px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--white);
+      box-shadow: 0 16px 40px rgba(15, 39, 64, .10);
+    }
+    .section-label {
+      margin: 0 0 8px;
+      color: var(--blue);
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    h2 { margin: 0 0 14px; color: var(--navy); font-size: clamp(1.55rem, 3vw, 2.1rem); line-height: 1.2; }
+    h3 { margin: 0 0 9px; color: var(--navy); font-size: 1.15rem; }
+    p { margin: 0; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-top: 26px; }
+    .card {
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--white);
+    }
+    .icon {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      margin-bottom: 18px;
+      place-items: center;
+      border-radius: 12px;
+      color: var(--blue);
+      background: var(--sky);
+      font-size: 1.25rem;
+      font-weight: 800;
+    }
+    .card p, .mission p { color: var(--muted); }
+    .goals { margin-top: 48px; }
+    .goals-header { margin-bottom: 20px; text-align: center; }
+    .goal-list { display: grid; gap: 12px; padding: 0; margin: 18px 0 0; list-style: none; }
+    .goal-list li { display: flex; gap: 11px; align-items: flex-start; color: var(--muted); }
+    .check {
+      flex: 0 0 auto;
+      display: grid;
+      width: 23px;
+      height: 23px;
+      margin-top: 2px;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--white);
+      background: var(--blue);
+      font-size: .78rem;
+      font-weight: 900;
+    }
+    .feedback {
+      margin-top: 48px;
+      padding: 44px 32px;
+      border-radius: 20px;
+      color: var(--white);
+      background: var(--navy);
+      text-align: center;
+    }
+    .feedback h2 { color: var(--white); }
+    .feedback p { max-width: 650px; margin: 0 auto 24px; color: #cbd9e8; }
+    .button {
+      display: inline-block;
+      padding: 13px 24px;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--blue);
+      font-weight: 800;
+      text-decoration: none;
+      transition: transform .18s ease, background .18s ease;
+    }
+    .button:hover, .button:focus { transform: translateY(-2px); background: var(--blue-dark); }
+    footer { padding: 0 20px 30px; color: #738095; text-align: center; font-size: .9rem; }
+    @media (max-width: 700px) {
+      .hero { padding: 64px 20px 72px; }
+      main { width: min(100% - 24px, 1100px); }
+      .mission, .card { padding: 25px; }
+      .grid { grid-template-columns: 1fr; }
+      .feedback { padding: 34px 22px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <span class="eyebrow">Focusing on the Future</span>
+    <h1>About Us</h1>
+    <p>Making college and career planning easier to understand, easier to access, and less overwhelming for every student.</p>
+  </header>
+
+  <main>
+    <section class="mission" aria-labelledby="mission-title">
+      <p class="section-label">Our Mission</p>
+      <h2 id="mission-title">Helping students move forward with confidence</h2>
+      <p>Focusing on the Future is a student-built resource hub created to give high school and college students clear, reliable guidance in one place. We connect students with practical resources for financial aid, academic success, campus life, first-generation support, career preparation, and honest college experiences.</p>
+    </section>
+
+    <section class="grid" aria-label="Our purpose">
+      <article class="card">
+        <div class="icon" aria-hidden="true">?</div>
+        <h3>The Problem</h3>
+        <p>Important college information is often spread across many websites, written in confusing language, or difficult to find at the exact moment a student needs it. Students without experienced guidance can feel especially unsure about financial aid, college expectations, and career decisions.</p>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true">→</div>
+        <h3>What We Do</h3>
+        <p>We organize trusted information into focused guides, direct students to useful outside sources, and include student perspectives that make college feel more understandable and realistic. Our goal is to help visitors find the next useful step quickly.</p>
+      </article>
+    </section>
+
+    <section class="goals" aria-labelledby="goals-title">
+      <div class="goals-header">
+        <p class="section-label">Our Goals</p>
+        <h2 id="goals-title">Building support for today and tomorrow</h2>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>Short-term</h3>
+          <ul class="goal-list">
+            <li><span class="check">✓</span><span>Expand each guide with practical, credible resources.</span></li>
+            <li><span class="check">✓</span><span>Make information simple to browse on any device.</span></li>
+            <li><span class="check">✓</span><span>Use student feedback to improve the topics we cover.</span></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Long-term</h3>
+          <ul class="goal-list">
+            <li><span class="check">✓</span><span>Build a larger collection of student stories and advice.</span></li>
+            <li><span class="check">✓</span><span>Partner with schools and community organizations.</span></li>
+            <li><span class="check">✓</span><span>Help more students make informed college and career choices.</span></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="feedback" aria-labelledby="feedback-title">
+      <p class="section-label">Help Us Improve</p>
+      <h2 id="feedback-title">Your experience can shape this project</h2>
+      <p>Tell us what was helpful, what was missing, or which resource you would like us to add next. The form only takes a few minutes.</p>
+      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSfa9rsvFmsj4CMhosoJyMNl3Zwt-Am4ci3nBh9mdhDoL_48hw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Share Your Feedback</a>
+    </section>
+  </main>
+
+  <footer>Focusing on the Future · Student-built college and career resources</footer>
+</body>
+</html>
